@@ -48066,9 +48066,12 @@ kS(a,b){this.yJ(b)
 this.Fd(a,b)},
 kU(a,b){this.yJ(a)
 this.Fe(a,b)},
-yJ(a){var s=a==null?null:a.b.a
-if(s==="/")A.a4B(new A.YF(),t.P)
-else if(s==="/page2")A.a4B(new A.YG(),t.P)}}
+yJ(a){var s,r="seoNameJS",q=a==null?null:a.b.a
+if(q==="/"){A.a4B(new A.YF(),t.P)
+s=$.a3q()
+s.kz(r,["description","this is first page"])}else if(q==="/page2"){A.a4B(new A.YG(),t.P)
+s=$.a3q()
+s.kz(r,["description","this is second page"])}}}
 A.YF.prototype={
 $0(){A.qO(B.to)},
 $S:5}
@@ -48078,18 +48081,14 @@ $S:5}
 A.jE.prototype={
 ar(){return new A.E7(B.m)}}
 A.E7.prototype={
-R(a){var s=$.a3q()
-s.kz("seoNameJS",["description","this is first page"])
-return new A.lT(B.uS,A.a4t(B.w6,!1,new A.Ye(a)),null)}}
+R(a){return new A.lT(B.uS,A.a4t(B.w6,!1,new A.Ye(a)),null)}}
 A.Ye.prototype={
 $0(){A.a1M(this.a).BI("/page2",null,t.X)},
 $S:0}
 A.jF.prototype={
 ar(){return new A.E8(B.m)}}
 A.E8.prototype={
-R(a){var s=$.a3q()
-s.kz("seoNameJS",["description","this is second page"])
-return B.AI}}
+R(a){return B.AI}}
 A.W6.prototype={
 ND(){var s,r,q,p,o,n=document,m=n.createElement("script")
 m.id="metaSEOScripts"
